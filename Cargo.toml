@@ -1,6 +1,6 @@
 [package]
-authors = ["hoge"]
-name = "blink"
+authors = ["{{authors}}"]
+name = "{{project-name}}"
 edition = "2018"
 version = "0.1.0"
 
