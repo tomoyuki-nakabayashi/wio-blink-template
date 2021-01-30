@@ -56,7 +56,6 @@ cargo-generate でプロジェクトテンプレートを初期化します。
 ```
 $ cargo generate \
     --git https://github.com/tomoyuki-nakabayashi/wio-blink-template.git \
-    --branch main \
     --name my-blink
 ```
 
