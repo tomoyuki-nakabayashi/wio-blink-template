@@ -5,5 +5,5 @@ authors = ["tomoyuki-nakabayashi <tomo.wait.for.it.yuki@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-wio_terminal = "0.2.0"
+wio_terminal = "0.3.0"
 embedded-hal = "0.2.4"

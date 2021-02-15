@@ -9,6 +9,6 @@ fn main() -> ! {
     let (mut user_led, mut delay) = support::init();
 
     loop {
-        // TODO: ここにLチカのコードを書きます
+        // TODO: ここにLチカのコードを書く
     }
 }

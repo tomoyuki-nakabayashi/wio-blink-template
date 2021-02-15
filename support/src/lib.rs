@@ -11,6 +11,7 @@ use wio::hal::gpio::{Port, Pa15, Input, Floating, Output, PushPull};
 use wio::pac::{CorePeripherals, Peripherals};
 use wio::prelude::*;
 
+/// LEDドライバ
 pub struct Led {
     pin: Pa15<Output<PushPull>>,
 }
@@ -22,14 +23,17 @@ impl Led {
         }
     }
 
+    /// LEDを点灯する
     pub fn turn_on(&mut self) {
         self.pin.set_high().unwrap();
     }
 
+    /// LEDを消灯する
     pub fn turn_off(&mut self) {
         self.pin.set_low().unwrap();
     }
 
+    /// LEDが点灯していれば消灯し、消灯していれば点灯する
     pub fn toggle(&mut self) {
         self.pin.toggle();
     }
